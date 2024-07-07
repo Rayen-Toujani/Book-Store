@@ -4,6 +4,9 @@ import{PORT} from "./config.js";
 import{mongo_url} from "./config.js";
 import mongoose from "mongoose";
 import {Book} from "./models/bookModel.js";
+import booksRoute from './routes/booksRoute.js';
+import cors from 'cors';
+
 
 
 
