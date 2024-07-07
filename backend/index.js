@@ -11,6 +11,8 @@ import {Book} from "./models/bookModel.js";
 
 const app = express();
 
+app.use(cors());
+
 app.use(express.json());
 
 app.get('/',(req,res)=>{
@@ -18,6 +20,8 @@ app.get('/',(req,res)=>{
     return res.status(234).send('welcome to mern stack');
 
 });
+
+
 
 app.use('/books', booksRoute);
 
